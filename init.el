@@ -12,9 +12,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("4cf9ed30ea575fb0ca3cff6ef34b1b87192965245776afa9e9e20c17d115f3fb" "aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "5f824cddac6d892099a91c3f612fcf1b09bb6c322923d779216ab2094375c5ee" default))
+   (quote
+    ("4cf9ed30ea575fb0ca3cff6ef34b1b87192965245776afa9e9e20c17d115f3fb" "aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "5f824cddac6d892099a91c3f612fcf1b09bb6c322923d779216ab2094375c5ee" default)))
  '(package-selected-packages
-   '(projectile color-identifiers-mode hl-todo gruvbox-theme markdown-mode+ haskell-mode haskell-emacs gruber-darker-theme)))
+   (quote
+    (fzf projectile color-identifiers-mode hl-todo gruvbox-theme markdown-mode+ haskell-mode haskell-emacs gruber-darker-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -129,4 +131,4 @@
 
 
 ;; Projectile
-(global-set-key (kbd "M-p") 'projectile-find-file)
+(global-set-key (kbd "M-p") 'fzf)
